@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "project-piper-task",
     "name": "Project 'Piper' Task",
-    "version": "1.0.2",
+    "version": "1.0.0",
     "publisher": "MartinSimecek",
     "targets": [
         {
@@ -23,7 +23,7 @@
     ],
     repository: {
         "type": "git",
-        "uri": ""
+        "uri": "https://github.com/msimecek/project-piper-ado"
     },
     "contributions": [
         {
