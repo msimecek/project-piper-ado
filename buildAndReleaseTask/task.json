@@ -1,0 +1,47 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "263c5407-f56f-4b73-a230-2a5e1b84572f",
+    "name": "project-piper-task",
+    "friendlyName": "Project 'Piper'",
+    "description": "CI/CD tooling for the SAP Ecosystem.",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Martin Simecek",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 2
+    },
+    "instanceNameFormat": "Piper $(command)",
+    "inputs": [
+        {
+            "name": "command",
+            "type": "string",
+            "label": "Command",
+            "defaultValue": "help",
+            "required": true,
+            "helpMarkDown": "Command to run. Will be passed to Piper as is."
+        },
+        {
+            "name": "args",
+            "type": "string",
+            "label": "Flags/arguments for the command",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Flags/arguments for the command. Chain multiple arguments like you would in a command line."
+        },
+        {
+            "name": "piperVersion",
+            "type": "string",
+            "label": "Version of the Piper binary to use",
+            "defaultValue": "latest",
+            "required": false,
+            "helpMarkDown": "Specify a version of the Piper binary to use, may be 'master', 'latest' or a released tag"
+        }
+    ],
+    "execution": {
+        "Node10": {
+            "target": "dist/index.js"
+        }
+    }
+}

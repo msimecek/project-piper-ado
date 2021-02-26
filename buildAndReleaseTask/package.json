@@ -1,0 +1,20 @@
+{
+  "name": "piper-ado",
+  "version": "1.0.0",
+  "description": "Project Piper integration for Azure DevOps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && cd .. && tfx extension create --manifest-globs vss-extension.json --output-path ./vsix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^3.0.1-preview",
+    "azure-pipelines-tool-lib": "^0.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@types/q": "^1.5.4"
+  }
+}

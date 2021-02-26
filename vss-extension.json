@@ -1,0 +1,40 @@
+{
+    "manifestVersion": 1,
+    "id": "project-piper-task",
+    "name": "Project 'Piper' Task",
+    "version": "1.0.2",
+    "publisher": "MartinSimecek",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Project Piper to support gCTS in SAP. Includes one build/release task.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/icon.png"        
+    },
+    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        }
+    ],
+    repository: {
+        "type": "git",
+        "uri": ""
+    },
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ]
+}
