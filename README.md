@@ -6,6 +6,8 @@ Adaptation of SAP tooling for continuous delivery ([project Piper](https://sap.g
 
 ## Usage
 
+This task is using the Piper executable which currently runs on **Linux only**. Make sure your build agent is Linux-based.
+
 If you want to sideload this task for your organization only, follow the official guide on publishing ADO extensions [from step 5](https://docs.microsoft.com/en-us/azure/devops/extend/develop/add-build-task?view=azure-devops#step-5-publish-your-extension).
 
 1. Use [tfx-cli](https://docs.microsoft.com/en-us/azure/devops/extend/develop/add-build-task?view=azure-devops#cli) to package the extension into a `.vsix` file.
